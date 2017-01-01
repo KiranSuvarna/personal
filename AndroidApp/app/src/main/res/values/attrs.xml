@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ImageCoverFlowView">
+        <attr name="visibleImage" format="integer" />
+        <attr name="reflectionHeight" format="fraction" />
+        <attr name="reflectionGap" format="dimension" />
+        <attr name="topImageClickEnable" format="boolean" />
+        <attr name="coverflowGravity" format="enum">
+            <enum name="top" value="0" />
+            <enum name="bottom" value="1" />
+            <enum name="center_vertical" value="2" />
+        </attr>
+        <attr name="coverflowLayoutMode" format="enum">
+            <enum name="match_parent" value="0"/>
+            <enum name="wrap_content" value="1"/>
+        </attr>
+        <attr name="enableReflection" format="boolean"/>
+        <attr name="reflectionShaderEnable" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="FancyCoverFlow">
+        <attr name="unselectedAlpha" format="float"/>
+        <attr name="unselectedSaturation" format="float"/>
+        <attr name="unselectedScale" format="float"/>
+        <attr name="maxRotation" format="integer"/>
+        <attr name="scaleDownGravity" format="float"/>
+        <attr name="actionDistance" format="integer">
+            <enum name="auto" value="2147483647" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="TypefaceTextView">
+        <attr name="font" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="ExpandableTextView" parent="TypefaceTextView">
+        <attr name="trimLength" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="PinView">
+        <attr name="numberPinBoxes"     format="integer"/>
+        <attr name="password"           format="boolean"/>
+        <attr name="numberCharacters"   format="integer"/>
+        <attr name="titles"             format="reference"/>
+        <attr name="split"              format="string"/>
+        <attr name="deleteOnClick"      format="boolean"/>
+        <attr name="keyboardMandatory"  format="boolean"/>
+        <attr name="nativePinBox"       format="boolean"/>
+        <attr name="drawablePinBox"     format="reference"/>
+        <attr name="colorTextPinBox"    format="color"/>
+        <attr name="colorTextTitles"    format="color"/>
+        <attr name="colorSplit"         format="color"/>
+        <attr name="textSizePinBox"     format="dimension"/>
+        <attr name="textSizeTitles"     format="dimension"/>
+        <attr name="sizeSplit"          format="dimension"/>
+    </declare-styleable>
+
+
+    <!-- PIN field -->
+    <declare-styleable name="PinViewForSmsCode">
+        <attr name="item_padding" format="integer" />
+        <attr name="pin_length" format="integer" />
+    </declare-styleable>
+
+    <!-- PIN field -->
+    <declare-styleable name="CustomTabView">
+        <attr name="tabs_padding" format="integer" />
+    </declare-styleable>
+
+</resources>

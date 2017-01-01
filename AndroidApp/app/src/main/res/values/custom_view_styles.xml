@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="YouPlusButton">
+        <attr name="primaryColor" format="color" />
+        <attr name="pressedColor" format="color" />
+        <attr name="backgroundColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="text" format="string" />
+        <attr name="icon" />
+        <attr name="fillStyle" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="filled" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SquareImageView">
+        <attr name="stretchMode" format="enum">
+            <enum name="min" value="0" />
+            <enum name="width" value="1" />
+            <enum name="height" value="2" />
+        </attr>
+    </declare-styleable>
+
+   <!-- <style name="CustomCirclePageIndicator">
+        <item name="fillColor">@android:color/white</item>
+        <item name="strokeColor">#FF000000</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="radius">10dp</item>
+        <item name="centered">true</item>
+        <item name="pageColor">#70FFFFFF</item>
+        <item name="snap">true</item>
+        <item name="touchEnabled">false</item>
+    </style>-->
+
+    <color name="default_youplus_button_primary_color">@color/blue</color>
+    <color name="default_youplus_button_pressed_color">@color/dark_blue</color>
+    <color name="default_youplus_button_background_color">@android:color/transparent</color>
+</resources>

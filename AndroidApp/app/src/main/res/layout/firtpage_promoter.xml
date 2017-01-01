@@ -1,0 +1,286 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_grey"
+
+    >
+    <!--
+        android:background="#ffdbdbdb"
+    -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_gravity="left|bottom"
+        android:scrollbars="vertical"
+
+
+        >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|top"
+        android:background="@color/background_grey"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|top"
+
+            style="@style/AppTheme.RootLayout">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|top"
+
+            style="@style/AppTheme.RootLayout">
+
+            <!--TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="aaa"
+                android:gravity="center_horizontal"
+                android:id="@+id/texttime"
+                style="@style/AppTheme.FormLable" />-->
+
+
+
+
+            <LinearLayout
+                style="@style/AppTheme.FormGroup"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="right" >
+
+
+                <TextView
+                    android:id="@+id/xtcount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/grey_line"
+
+                    android:text="Only One Time Data has to be Inserted for each location"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/AppTheme.FormGroup"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" >
+
+<!--<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:id="@+id/protometnumberEditText"
+    android:layout_weight="1"
+    android:hint="Enter Promoter Phone Number"
+    android:inputType="number"
+    android:textColor="#50c9f5"
+    android:ems="10"
+    android:background="@drawable/et_bg_phone"
+    android:textColorHint="#50c9f5"
+    android:gravity="center"
+    style="@style/pin_edittext_style"/>-->
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:id="@+id/protometnumberEditText"
+                    android:layout_weight="1"
+                    android:hint="Enter Promoter Phone Number"
+                    android:inputType="number"
+                    android:textColor="#50c9f5"
+                    android:ems="10"
+                    android:background="@drawable/et_bg_phone"
+
+                    style="@style/pin_edittext_style"
+                    android:imeOptions="actionDone"
+                    android:scrollHorizontally="true"
+                    android:textColorHint="#50c9f5"
+                    android:gravity="center"
+                    />
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="30dp"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/productTypeProgressBar"
+                    android:indeterminate="true"
+                    android:indeterminateDrawable="@drawable/lightblueprogress"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/AppTheme.FormGroup"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" >
+
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:id="@+id/locationEditText"
+                    android:layout_weight="1"
+                    android:hint="Enter Location of Event"
+                    android:inputType="textLongMessage"
+                    android:textColor="#50c9f5"
+                    android:background="@drawable/et_bg_phone"
+
+                    style="@style/pinprompter_edittext_style"
+                    android:imeOptions="actionDone"
+                    android:textColorHint="#50c9f5"
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/AppTheme.FormGroup"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" >
+
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:id="@+id/areaEditText"
+                    android:layout_weight="1"
+                    android:hint="Enter Area Name of Event"
+                    android:inputType="textLongMessage"
+                    android:textColor="#50c9f5"
+                    android:background="@drawable/et_bg_phone"
+
+                    style="@style/pinprompter_edittext_style"
+                    android:imeOptions="actionDone"
+                    android:textColorHint="#50c9f5"
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/AppTheme.FormGroup"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="right" >
+
+
+                <com.journaldev.youplusmegaevent.YouPlusButton
+                    android:id="@+id/btnSave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    app:text="Save"
+                    app:icon="@drawable/save"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/AppTheme.FormGroup"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="right" >
+
+
+
+                <TextView
+                    android:id="@+id/changecount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+
+                    android:textSize="12dp"
+                    android:textColor="@color/grey_line"
+
+                    android:text="If any promoter changes location,first click on clear button,then enter new location and save"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/AppTheme.FormGroup"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="right" >
+
+                <com.journaldev.youplusmegaevent.YouPlusButton
+                    android:id="@+id/btnClear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    app:text="Clear previous location"
+                    app:icon="@drawable/delete"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/AppTheme.FormGroup"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="right"
+                android:paddingBottom="50dp"
+                ></LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            style="@style/AppTheme.FormGroup"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="right"
+            android:paddingBottom="50dp"
+            ></LinearLayout>
+        <LinearLayout
+            style="@style/AppTheme.FormGroup"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="right"
+
+            ></LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
+
+</RelativeLayout>

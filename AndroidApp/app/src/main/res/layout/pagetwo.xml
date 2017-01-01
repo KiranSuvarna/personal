@@ -1,0 +1,422 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_grey"
+
+    >
+    <!--
+        android:background="#ffdbdbdb"
+    -->
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|top"
+        android:background="@color/background_grey"
+        >
+        <LinearLayout
+            android:id="@+id/container_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/background_grey"
+            >
+
+            <android.support.v7.widget.Toolbar
+
+                android:id="@+id/my_awesome_toolbar"
+                android:layout_height="@dimen/abc_action_bar_default_height_material"
+                android:layout_width="match_parent"
+                android:minHeight="@dimen/abc_action_bar_default_height_material"
+                android:background="?attr/colorPrimary"
+
+                android:elevation="8dp"
+                >
+
+                <!--
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/logo"
+
+                            android:gravity="left"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  YouPlus Campaign"
+                            android:textSize="25dp"
+                            android:textColor="#ffffff"
+
+                            android:gravity="center"
+                            android:layout_alignParentTop="true"
+                            />
+                -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    >
+                    <ImageView
+                        android:id="@+id/title_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        android:contentDescription="@null"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/youpluslogo"
+                        />
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@android:color/holo_blue_light"
+                        android:textStyle="bold"
+                        android:text=" MegaEvent"
+                        android:textSize="22dp"
+                        />
+                </LinearLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+        </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView"
+            android:layout_gravity="left|bottom"
+
+            >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|top"
+
+                style="@style/AppTheme.RootLayout">
+
+
+
+                <LinearLayout
+                    style="@style/AppTheme.FormGroup"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal" >
+
+
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleSmall"
+                        android:layout_width="30dp"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/productTypeProgressBar"
+                        android:indeterminate="true"
+                        android:indeterminateDrawable="@drawable/lightblueprogress"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    style="@style/AppTheme.FormGroup"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal" >
+
+                    <!--  <TextView
+                          style="@style/AppTheme.FormLable"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:textAppearance="?android:attr/textAppearanceMedium"
+                          android:text="Where do you shop:"
+                          android:id="@+id/textView14" />
+  -->
+                    <!--   <Spinner
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:id="@+id/shop"
+
+                           android:imeOptions="actionDone"
+                           style="@style/spinner_style"/>-->
+
+                    <Spinner
+                        android:id="@+id/shop"
+                        style="@style/Spinner"
+                        android:spinnerMode="dropdown"
+                        android:layout_above="@+id/linearLayout"
+                        />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    style="@style/AppTheme.FormGroup"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal" >
+
+                    <!--  <TextView
+                          style="@style/AppTheme.FormLable"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:textAppearance="?android:attr/textAppearanceMedium"
+                          android:text="Where do you shop:"
+                          android:id="@+id/textView14" />
+  -->
+                    <!--  <Spinner
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/luvit"
+
+                          android:imeOptions="actionDone"
+                          style="@style/spinner_style"/>-->
+                    <Spinner
+                        android:id="@+id/luvit"
+                        style="@style/Spinner"
+                        android:spinnerMode="dropdown"
+                        android:layout_above="@+id/linearLayout"
+                        />
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    style="@style/AppTheme.FormGroup"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal" >
+
+                    <!--  <TextView
+                          style="@style/AppTheme.FormLable"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:textAppearance="?android:attr/textAppearanceMedium"
+                          android:text="Where do you shop:"
+                          android:id="@+id/textView14" />
+  -->
+                    <!-- <Spinner
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:id="@+id/fairnlovely"
+
+                         android:imeOptions="actionDone"
+                         style="@style/spinner_style"/>
+ -->
+                    <Spinner
+                        android:id="@+id/fairnlovely"
+                        style="@style/Spinner"
+                        android:spinnerMode="dropdown"
+                        android:layout_above="@+id/linearLayout"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    style="@style/AppTheme.FormGroup"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal" >
+
+                    <!--  <TextView
+                          style="@style/AppTheme.FormLable"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:textAppearance="?android:attr/textAppearanceMedium"
+                          android:text="Where do you shop:"
+                          android:id="@+id/textView14" />
+  -->
+                    <!--  <Spinner
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/cherio"
+
+                          android:imeOptions="actionDone"
+                          style="@style/spinner_style"/>-->
+                    <Spinner
+                        android:id="@+id/cherio"
+                        style="@style/Spinner"
+                        android:spinnerMode="dropdown"
+                        android:layout_above="@+id/linearLayout"
+                        />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/AppTheme.FormGroup"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal" >
+
+                    <!--  <TextView
+                          style="@style/AppTheme.FormLable"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:textAppearance="?android:attr/textAppearanceMedium"
+                          android:text="Where do you shop:"
+                          android:id="@+id/textView14" />
+  -->
+
+
+
+                    <Spinner
+                        android:id="@+id/dove"
+                        style="@style/Spinner"
+                        android:spinnerMode="dropdown"
+                        android:layout_above="@+id/linearLayout"
+                        />
+                    <!--
+                                        <Spinner
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/dove"
+
+                                            android:imeOptions="actionDone"
+                                            style="@style/spinner_style"/>
+                                     -->
+
+
+                </LinearLayout>
+                <LinearLayout
+                    style="@style/AppTheme.FormGroup"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal" >
+
+                    <!--  <TextView
+                          style="@style/AppTheme.FormLable"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:textAppearance="?android:attr/textAppearanceMedium"
+                          android:text="Where do you shop:"
+                          android:id="@+id/textView14" />
+  -->
+                    <!--  <Spinner
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/attat"
+
+                          android:imeOptions="actionDone"
+                          style="@style/spinner_style"/>
+  -->
+                    <Spinner
+                        android:id="@+id/attat"
+                        style="@style/Spinner"
+                        android:spinnerMode="dropdown"
+                        android:layout_above="@+id/linearLayout"
+                        />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    style="@style/AppTheme.FormGroup"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal" >
+
+                    <!--  <TextView
+                          style="@style/AppTheme.FormLable"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:textAppearance="?android:attr/textAppearanceMedium"
+                          android:text="Where do you shop:"
+                          android:id="@+id/textView14" />
+  -->
+                    <!--  <Spinner
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/hair"
+
+                          android:imeOptions="actionDone"
+                          style="@style/spinner_style"/>-->
+                    <Spinner
+                        android:id="@+id/hair"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/Spinner"
+                        android:spinnerMode="dropdown"
+                        android:layout_above="@+id/linearLayout"
+                        />
+
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    style="@style/AppTheme.FormGroup"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/AppTheme.FormGroup"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="right" >
+
+                    <!-- <Button
+                         android:layout_width="fill_parent"
+                         android:layout_height="41dp"
+                         android:text="Save "
+                         android:id="@+id/submit"
+                         style="@style/AppTheme.FormButton"
+                         android:onClick="validate"/>
+ -->
+                    <com.journaldev.youplusmegaevent.YouPlusButton
+                        android:id="@+id/submit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        app:text="Save"
+                        app:icon="@drawable/save"
+                        />
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    style="@style/AppTheme.FormGroup"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="right"
+                    android:paddingBottom="50dp"
+                    ></LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

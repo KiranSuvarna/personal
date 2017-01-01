@@ -1,0 +1,276 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_grey"
+
+    >
+    <!--
+        android:background="#ffdbdbdb"
+    -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|top"
+        android:background="@color/background_grey"
+        >
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|top"
+
+            style="@style/AppTheme.RootLayout">
+
+            <!--TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="aaa"
+                android:gravity="center_horizontal"
+                android:id="@+id/texttime"
+                style="@style/AppTheme.FormLable" />-->
+
+            <LinearLayout
+                style="@style/AppTheme.FormGroup"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="right"
+                android:paddingBottom="50dp"
+                ></LinearLayout>
+
+
+
+
+            <LinearLayout
+                style="@style/AppTheme.FormGroup"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="right" >
+
+                <!-- <Button
+                     android:layout_width="fill_parent"
+                     android:layout_height="41dp"
+                     android:text="Save "
+                     android:id="@+id/submit"
+                     style="@style/AppTheme.FormButton"
+                     android:onClick="validate"/>
+-->
+
+
+
+                <com.journaldev.youplusmegaevent.YouPlusButton
+                    android:id="@+id/button_export"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    app:text="Export Data To CSV"
+                    app:icon="@drawable/export"
+                    />
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_line" />
+
+            <LinearLayout
+                style="@style/AppTheme.FormGroup"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="right" >
+
+
+                <TextView
+                    android:id="@+id/xtcount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/grey_line"
+
+                    android:text="Please First select date(MM/dd/yyyy) button"
+                    />
+
+                <!-- <Button
+                     android:layout_width="fill_parent"
+                     android:layout_height="41dp"
+                     android:text="Save "
+                     android:id="@+id/submit"
+                     style="@style/AppTheme.FormButton"
+                     android:onClick="validate"/>
+-->
+
+
+
+           <!--     <com.journaldev.youplusmegaevent.YouPlusButton
+                    android:id="@+id/button_sendmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    app:text="Send Mail With Attachment"
+                    app:icon="@drawable/mail"
+                    />
+-->
+
+            </LinearLayout>
+
+            <RelativeLayout
+                style="@style/AppTheme.FormGroup"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+
+                <com.journaldev.youplusmegaevent.YouPlusButton
+                    android:id="@+id/btn_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_alignBottom="@+id/in_date"
+                    android:layout_toRightOf="@+id/in_date"
+                    app:text="Date Date"
+                    app:icon="@drawable/mail"
+
+                    android:layout_gravity="center_horizontal"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/in_date"
+                    android:hint="Date"
+                    android:inputType="number"
+                    android:textColor="#50c9f5"
+                    android:ems="10"
+                    android:background="@drawable/et_bg_phone"
+
+                    style="@style/pin_edittext_style"
+
+                    android:textColorHint="#50c9f5"
+
+                    />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/AppTheme.FormGroup"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="right" >
+
+                <!-- <Button
+                     android:layout_width="fill_parent"
+                     android:layout_height="41dp"
+                     android:text="Save "
+                     android:id="@+id/submit"
+                     style="@style/AppTheme.FormButton"
+                     android:onClick="validate"/>
+-->
+
+
+
+                <TextView
+                    android:id="@+id/edittxtcount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="40dp"
+                    android:textColor="@color/blue_select_city_item"
+
+android:text=""
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/AppTheme.FormGroup"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="right" >
+
+                <!-- <Button
+                     android:layout_width="fill_parent"
+                     android:layout_height="41dp"
+                     android:text="Save "
+                     android:id="@+id/submit"
+                     style="@style/AppTheme.FormButton"
+                     android:onClick="validate"/>
+-->
+
+
+
+                <com.journaldev.youplusmegaevent.YouPlusButton
+                    android:id="@+id/button_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    app:text="Number of samples distributed"
+                    app:icon="@drawable/mail"
+                    />
+
+
+            </LinearLayout>
+           <!-- <LinearLayout
+                style="@style/AppTheme.FormGroup"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+                <Button
+                    android:id="@+id/button_sendmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/AppTheme.FormButton"
+                    android:padding="20dp"
+                    android:text="Send Mail With Attachment " />
+            </LinearLayout>-->
+            <LinearLayout
+                style="@style/AppTheme.FormGroup"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="right"
+                android:paddingBottom="50dp"
+                ></LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

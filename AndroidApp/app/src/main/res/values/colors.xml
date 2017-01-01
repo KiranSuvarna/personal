@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="actionbar_bg">#FFFFFF</color>
+
+
+    <color name="blue">#4DC8F4</color>
+    <color name="dark_blue">#246C85</color>
+    <color name="select_white">#FFC3C3C3</color>
+    <color name="light_grey">#FF2B2B2B</color>
+    <color name="list_item_title">#FFFFFF</color>
+    <color name="list_background">#556b2f</color><!--88c0c0c0-->
+    <color name="list_background_pressed">#ffffff</color><!--cc0000-->
+    <color name="list_divider">#FFFFFF</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#ffffff</color><!--c5c4c4-->
+    <color name="holo_blue">#FF33B5E5</color>
+
+    <color name="background_grey">#FF1A1A1A</color>
+
+    <color name="blue_pressed">#ffF3676B</color>
+    <color name="blue_normal">#ffff0000</color>
+    <color name="green_complete">#ff99cc00</color>
+    <color name="purple_progress">#fff0f0f0</color>
+    <color name="red_error">#ffff4444</color>
+    <color name="text_light_grey">#FF9E9E9E</color>
+    <color name="text_grey">#FF7B7B7B</color>
+
+
+    <!--color for header and footer   black color ff0000  blue color#2494f2-->
+    <color name="headerColor">#2494f2</color>
+    <color name="footerColor">#2494f2</color>
+    <color name="red">#FFF</color>
+    <color name="dialog_btn">#007aff</color>
+
+    <color name="blue_select_city_item">#50c9f5</color>
+    <color name="white_color">#FFFFFF</color>
+    <color name="Black_color">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="InputBg">#ff99cc00</color>
+    <color name="grey_line">#5E5E5E</color>
+
+    <color name="darkGray">#626262</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+</resources>

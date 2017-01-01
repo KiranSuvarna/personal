@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:layout_margin="30dp"
+    android:orientation="vertical"
+    android:background="@drawable/white_rect_no_padding">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_icon"
+        android:contentDescription="@null"
+        android:layout_marginTop="25dp"
+        android:visibility="gone"
+        android:src="@drawable/dialog_icon_envelope"
+        android:layout_gravity="center_horizontal" />
+
+    <com.journaldev.youplusmegaevent.custom_view.TypefaceTextView
+        app:font="@string/font_openSansSemiBold"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@android:color/black"
+        android:text="@string/app_name"
+        android:textSize="@dimen/middle_text_size" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray"/>
+
+    <com.journaldev.youplusmegaevent.custom_view.TypefaceTextView
+        app:font="@string/font_openSans"
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:textSize="15sp"
+        android:text="@string/app_name"
+        android:textColor="@color/text_grey" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dialog_btn"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_weight="1"
+            android:text="Ok" />
+
+    </LinearLayout>
+<!--
+    android:background="@drawable/transp_button_bg"
+-->
+
+</LinearLayout>

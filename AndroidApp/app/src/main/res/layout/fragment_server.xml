@@ -1,0 +1,171 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_grey"
+
+    >
+    <!--
+        android:background="#ffdbdbdb"
+    -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|top"
+        android:background="@color/background_grey"
+        >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@color/background_grey"
+        ></LinearLayout>
+
+
+        <LinearLayout
+            style="@style/AppTheme.FormGroup"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="right" >
+
+
+            <TextView
+                android:id="@+id/xtcount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:textSize="16dp"
+                android:textColor="@color/grey_line"
+
+                android:text="Before Uploading please Switch On Internet/Wifi and Please select date then upload to server,Date(MM/dd/yyyy)"
+                />
+
+            <!-- <Button
+                 android:layout_width="fill_parent"
+                 android:layout_height="41dp"
+                 android:text="Save "
+                 android:id="@+id/submit"
+                 style="@style/AppTheme.FormButton"
+                 android:onClick="validate"/>
+-->
+
+
+
+            <!--     <com.journaldev.youplusmegaevent.YouPlusButton
+                     android:id="@+id/button_sendmail"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginBottom="10dp"
+                     android:layout_marginLeft="20dp"
+                     android:layout_marginRight="20dp"
+                     android:layout_marginTop="10dp"
+                     app:text="Send Mail With Attachment"
+                     app:icon="@drawable/mail"
+                     />
+ -->
+
+        </LinearLayout>
+
+        <RelativeLayout
+            style="@style/AppTheme.FormGroup"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+            <com.journaldev.youplusmegaevent.YouPlusButton
+                android:id="@+id/btn_date"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_alignBottom="@+id/in_date"
+                android:layout_toRightOf="@+id/in_date"
+                app:text="Date Date"
+                app:icon="@drawable/mail"
+
+                android:layout_gravity="center_horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:id="@+id/in_date"
+                android:hint="Date"
+                android:inputType="number"
+                android:textColor="#50c9f5"
+                android:ems="10"
+                android:background="@drawable/et_bg_phone"
+
+                style="@style/pin_edittext_style"
+
+                android:textColorHint="#50c9f5"
+
+                />
+
+        </RelativeLayout>
+  <!--  <TextView
+        android:id="@+id/label"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="45dp"
+        android:text=""
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_below="@id/label"
+        android:layout_centerInParent="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="Coming Soon"
+        android:id="@+id/textView2" />
+-->
+
+    <LinearLayout
+        style="@style/AppTheme.FormGroup"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="right" >
+
+        <!-- <Button
+             android:layout_width="fill_parent"
+             android:layout_height="41dp"
+             android:text="Save "
+             android:id="@+id/submit"
+             style="@style/AppTheme.FormButton"
+             android:onClick="validate"/>
+-->
+
+
+
+        <com.journaldev.youplusmegaevent.YouPlusButton
+            android:id="@+id/button_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            app:text="Upload data to Server"
+
+            />
+
+
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>

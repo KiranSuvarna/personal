@@ -1,0 +1,213 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_grey"
+
+    >
+    <!--
+        android:background="#ffdbdbdb"
+    -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|top"
+        android:background="@color/background_grey"
+        >
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|top"
+
+                style="@style/AppTheme.RootLayout">
+
+                <!--TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="aaa"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/texttime"
+                    style="@style/AppTheme.FormLable" />-->
+                <LinearLayout
+                    android:id="@+id/container_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/background_grey"
+                    >
+
+                    <android.support.v7.widget.Toolbar
+
+                        android:id="@+id/my_awesome_toolbar"
+                        android:layout_height="@dimen/abc_action_bar_default_height_material"
+                        android:layout_width="match_parent"
+                        android:minHeight="@dimen/abc_action_bar_default_height_material"
+                        android:background="?attr/colorPrimary"
+
+                        android:elevation="8dp"
+                        >
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center"
+                            >
+                            <ImageView
+                                android:id="@+id/title_image"
+                                android:layout_width="wrap_content"
+                                android:layout_height="15dp"
+                                android:contentDescription="@null"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/youpluslogo"
+                                />
+                            <TextView
+                                android:id="@+id/title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textColor="@android:color/holo_blue_light"
+                                android:textStyle="bold"
+                                android:text=" MegaEvent"
+                                android:textSize="22dp"
+                                />
+                        </LinearLayout>
+
+                    </android.support.v7.widget.Toolbar>
+
+                </LinearLayout>
+                <LinearLayout
+                    style="@style/AppTheme.FormGroup"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="right"
+                    android:paddingBottom="50dp"
+                    ></LinearLayout>
+
+
+
+                <LinearLayout
+                    style="@style/AppTheme.FormGroup"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal" >
+
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/LoactionEditText"
+                        android:layout_weight="1"
+                        android:hint="Enter Location"
+                        android:inputType="number"
+                        android:textColor="#50c9f5"
+                        android:ems="10"
+                        android:background="@drawable/et_bg_phone"
+
+                        style="@style/pin_edittext_style"
+                        android:imeOptions="actionDone"
+                        android:scrollHorizontally="true"
+                        android:textColorHint="#50c9f5"
+                        android:gravity="center"
+                        />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/AppTheme.FormGroup"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal" >
+
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/areaEditText"
+                        android:layout_weight="1"
+                        android:hint="Enter Area"
+                        android:inputType="number"
+                        android:textColor="#50c9f5"
+                        android:ems="10"
+                        android:background="@drawable/et_bg_phone"
+
+                        style="@style/pin_edittext_style"
+                        android:imeOptions="actionDone"
+                        android:scrollHorizontally="true"
+                        android:textColorHint="#50c9f5"
+                        android:gravity="center"
+                        />
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleSmall"
+                        android:layout_width="30dp"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/productTypeProgressBar"
+                        android:indeterminate="true"
+                        android:indeterminateDrawable="@drawable/lightblueprogress"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    style="@style/AppTheme.FormGroup"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="right" >
+
+                    <!-- <Button
+                         android:layout_width="fill_parent"
+                         android:layout_height="41dp"
+                         android:text="Save "
+                         android:id="@+id/submit"
+                         style="@style/AppTheme.FormButton"
+                         android:onClick="validate"/>
+ -->
+                     <com.journaldev.youplusmegaevent.YouPlusButton
+                    android:id="@+id/btnNext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    app:text="Next"
+                    app:icon="@drawable/next"
+                    />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/AppTheme.FormGroup"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="right"
+                    android:paddingBottom="50dp"
+                    ></LinearLayout>
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

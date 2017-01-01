@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">YouPlus MegaEvent</string>
+    <string name="app_namenew"></string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+<string name="youpluslink">https://play.google.com/store/apps/details?id=co.youplus</string>
+    <string-array name="navigation_drawer_items_array">
+        <item>Connect</item>
+        <item>Fixtures</item>
+        <item>Table</item>
+    </string-array>
+    <string name="logout">logout</string>
+    <string name="action_logout">Logout</string>
+    <string name="button_name"><u><b><i>Copyright</i></b></u>.</string>
+    <string name="folder">Folder</string>
+    <string name="parentDirectory">Parent Directory</string>
+    <string name="fileSize">File Size</string>
+    <string name="currentDir">Current Dir</string>
+    <string name="age_prompt">Choose Age</string>
+    <string name="income_prompt">Choose Your Monthly Income Please</string>
+
+    <string name="font_openSansSemiBold">fonts/open-sans-semibold.ttf</string>
+
+    <string name="font_openSans">fonts/open-sans.ttf</string>
+</resources>
