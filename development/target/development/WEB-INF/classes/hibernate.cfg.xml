@@ -12,7 +12,7 @@
 		</property>
 
 		<property name="hibernate.connection.url">
-			jdbc:mysql://localhost:3306/development
+			jdbc:mysql://development.c1tx4qfyssxy.us-east-1.rds.amazonaws.com:3306/development
 		</property>
 		<property name="hibernate.connection.username">
 			root

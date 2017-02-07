@@ -36,6 +36,6 @@ public class UserHandler {
 	}
 	public static void main(String[] args) {
 		UserHandler handler = new UserHandler();
-		handler.setUsersData("Kiran", "8105505579", "kiransuvarna19@gmail.com", "male", "23", "password123", "test_device_id_7", "Android");
+		handler.setUsersData("Kiran", "8105505579", "kiransuvarna19@gmail.com", "male", "23", "password123", "test_device_id_11", "Android");
 	}
 }
