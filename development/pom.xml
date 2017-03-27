@@ -20,6 +20,21 @@
 			<artifactId>hibernate-entitymanager</artifactId>
 			<version>4.3.8.Final</version>
 		</dependency>
+		<!-- <dependency> -->
+		<!-- <groupId>org.bitbucket.b_c</groupId> -->
+		<!-- <artifactId>jose4j</artifactId> -->
+		<!-- <version>0.5.5</version> -->
+		<!-- </dependency> -->
+		<!-- <dependency> -->
+		<!-- <groupId>javax.annotation</groupId> -->
+		<!-- <artifactId>javax.annotation-api</artifactId> -->
+		<!-- <version>1.2</version> -->
+		<!-- </dependency> -->
+		<!-- <dependency> -->
+		<!-- <groupId>asm</groupId> -->
+		<!-- <artifactId>asm</artifactId> -->
+		<!-- <version>3.3.1</version> -->
+		<!-- </dependency> -->
 
 		<!-- optional -->
 
@@ -80,11 +95,13 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<version>5.1.18</version>
 		</dependency>
-		<dependency>
-			<groupId>com.sun.jersey</groupId>
-			<artifactId>jersey-client</artifactId>
-			<version>1.9.1</version>
-		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.sun.jersey/jersey-client -->
+		<!-- <dependency> -->
+		<!-- <groupId>com.sun.jersey</groupId> -->
+		<!-- <artifactId>jersey-client</artifactId> -->
+		<!-- <version>1.19.3</version> -->
+		<!-- </dependency> -->
+
 
 		<dependency>
 			<groupId>junit</groupId>
@@ -93,11 +110,11 @@
 			<scope>test</scope>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/commons-codec/commons-codec -->
-		<dependency>
-			<groupId>commons-codec</groupId>
-			<artifactId>commons-codec</artifactId>
-			<version>1.4</version>
-		</dependency>
+		<!-- <dependency> -->
+		<!-- <groupId>commons-codec</groupId> -->
+		<!-- <artifactId>commons-codec</artifactId> -->
+		<!-- <version>1.4</version> -->
+		<!-- </dependency> -->
 
 	</dependencies>
 	<build>
